@@ -28,6 +28,9 @@
 
 ### CODE HERE: ###
 
+username = "Alan Turing"
+
+print(username)
 
 # If you're lost, get an error, or are otherwise stuck, go ahead and pull up
 # the last video and make sure to review the content or ask any questions you
@@ -60,9 +63,9 @@
 #
 
 
-dialogue_one = "She said, "Holy cow!""
+dialogue_one = 'She said, "Holy cow!"'
 
-statement_one = 'This person's car.'
+statement_one = "This person's car."
 
 print(dialogue_one)
 
@@ -93,3 +96,12 @@ print(statement_one)
 #
 #   python introduction_to_strings.py
 #
+
+favorite_food = 'Chocolate Cake'
+
+favorite_song = "Esther's by Amon Tobin"
+
+print("My favorite food is:", favorite_food)
+
+print("My favorite song is:", favorite_song)
+
