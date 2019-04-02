@@ -31,6 +31,12 @@
 
 ### CODE HERE: ###
 
+first_name = "John "
+
+last_name = " Wick"
+
+suffix = " II"
+
 
 # Now, create the:
 #
@@ -42,6 +48,10 @@
 #
 
 ### CODE HERE: ###
+
+full_name = first_name + last_name + suffix
+
+print(full_name)
 
 
 # Of course, be sure to print:
@@ -89,8 +99,17 @@
 #   print(my_onomatopoeia)
 #
 
+my_onomatopoeia = "Pow!"
+
+my_onomatopoeia = my_onomatopoeia * 5
+
+print(my_onomatopoeia)
 
 ### CODE HERE: ###
+
+my_onomatopoeia = my_onomatopoeia * 100
+
+print(my_onomatopoeia)
 
 
 # As always, be sure to then run this program via:
