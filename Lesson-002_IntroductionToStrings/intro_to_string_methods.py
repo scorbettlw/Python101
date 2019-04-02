@@ -1,16 +1,12 @@
 """
-    Lesson 002 - Pt6: Introduction to String Methods
+    Lesson 002 - Pt4: String Operations II
 
-    We've already been using the:
+    Now that we've covered the:
 
-        print()
+        +
 
-    method (recall, a method is like a callable behavior or action), which is built-in to
-    Python and allows us to display the data in our variables. Did you know that Python
-    strings have a massive suite of like, helpful methods we can use to manipulate them?
-    Here, we'll cover a handful of essential methods you need to know when working with
-    strings in Python while diving deeper into what methods really are and represent
-    in an object-oriented programming language.
+    operator (the "concatenation" operator) with respect to Strings,
+    let's take a deeper look at concatenation and finally examine another operator.
 
 """
 
