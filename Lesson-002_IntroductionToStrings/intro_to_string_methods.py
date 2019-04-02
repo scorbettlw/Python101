@@ -31,8 +31,53 @@
 # variable upon which they are called, although some exist solely to provide additional,
 # useful information about a given variable of a certain data type.
 #
-# Let's begin with another method that, much like print, is built into the Python programming
-# language. The:
+# One of the most important attributes of a Python string is that it is composed of multiple
+# "characters" (individuals letters, numbers, symbols, etc.). Each of these individual characters
+# occupies a certain position within a string, and can be accessed using the "slicing" syntax
+# available to Python strings (as below):
+#
+#   example_string = "dog"
+#
+#   individual_character = example_string[0]
+#
+# Note that to access an individual character, we need to append a pair of square brackets to the
+# end of a string, and then pass the position of the character we want between those brackets. Likewise,
+# you'll see above that we've passed the number 0. "Wait", you say, "There isn't 'zero' position though!"
+# This is where strings can get a bit tricky. Counter to our intuition, for Python strings, the first
+# position is denoted as having an index of zero. That is to say, any valid string that is non-empty 
+# (a set of opening and closing quotes like: '' or "" with no other characters between them) starts at
+# position zero.
+#
+# This brings us to an important point. If the first position for a Python string starts at an index of 
+# zero, the last character in a string is at an index of the string's length-1. Let's try it below! 
+# Access the first and last characters in the string below, storing the first character in a variable 
+# named `first_character` and the last character is a variable named `last_character`, and then print 
+# those variables below.
+
+my_hero = "Black Widow"
+
+### CODE HERE: ###
+
+
+# We can pass more than one index at a time of course! Enter Python 'slice' syntax, a means
+# of accessing multiple characters between two indicies of a string. An example is below:
+#
+#   first_name = [0:5]
+#
+# Note that a colon (:) seperates the two indices we want to work between. Likewise, it's
+# critical to remember that the ending index is not "inclusive". This means that for our example,
+# if we want to extract the word "Black" from the string, though the word "Black" occurs between
+# indices 0 and 4, we need to start at index 0 and end at index 5. Uncomment and run the code below
+# for further proof:
+
+# first_word = my_hero[0:5]
+#
+# print(first_word)
+#
+
+# Now that we can see that Python strings are just a collection of characters at various positions,
+# let's begin with our first method. Much like print, the len() method is built into the Python 
+# programming language. The:
 #
 #   len()
 #
@@ -88,11 +133,11 @@
 ### CODE HERE: ###
 
 
-# Now that we've covered arguably the most important method for strings, let's examine two other
-# important behaviors we might want to use when working with strings. One critical operation
-# you'll run into again and again when working with strings is finding the position of character
-# or smaller string within a larger string. For example, how would we find the starting position
-# of the smaller string:
+# Now that we've covered one of the most important method for strings, let's examine two other
+# methods we'll want to use when working with strings. One critical operation you'll run into 
+# again and again when working with strings is finding the position of character or smaller 
+# string within a larger string. For example, how would we find the starting position of the 
+# smaller string:
 #
 #   "dog"
 #
@@ -139,6 +184,44 @@
 #
 #   raw_data
 #
-# variable. Be sure to pass the
+# variable. Be sure to pass the string:
 #
+#   "dog"
+#
+# to the method call, store the index in a variable, and print that variable
+# to console/shell!
+# 
+
+### CODE HERE: ###
+
+raw_data = "We have two cats, three fish, and a dog."
+
+
+# Using various combinations of index() and len(), we can access almost any part of a string:
+# for example:
+#
+#   search_string = "dog"
+#
+#   search_string_length = len(search_string)
+#
+#   query_string = "The dog says, 'Woof!'"
+#
+#   start_position = query_string.index(search_string)
+#
+#   query_result = query_string[start_position:start_position + search_string_length]
+#
+#   print(query_result)
+#
+# This makes extracting substrings incredibly easy! Go ahead and try below. Extract the first
+# word in the string below, save it in a new variable, and print the new variable containing the
+# first word.
+#
+
+my_hero_two = "Ant Man"
+
+### CODE HERE: ###
+
+
+# Next, lets examine a few more methods that are critical to working with strings, the replace,
+# find, count, upper, lower, and capitalize methods.
 #
