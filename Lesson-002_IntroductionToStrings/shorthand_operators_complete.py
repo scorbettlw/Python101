@@ -60,6 +60,8 @@ country = " United States"
 
 ### CODE HERE: ###
 
+location_name += (state + country)
+
 print(location_name)
 
 
@@ -103,6 +105,7 @@ password = "shortpass123"
 
 ### CODE HERE: ###
 
+password *= 6
 
 print(password)
 
