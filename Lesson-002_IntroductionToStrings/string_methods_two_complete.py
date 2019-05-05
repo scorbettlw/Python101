@@ -29,8 +29,6 @@
 #
 #   search_string = "Three"
 #
-#   search_string_length = len(search_string)
-#
 #   search_string_start = original_string.index(search_string)
 #
 #   new_string = original_string[:search_string_start] + "Four"
@@ -45,6 +43,13 @@ original_string = "full_username"
 
 ### CODE HERE: ###
 
+search_string = "username"
+
+search_string_start = original_string.index(search_string)
+
+new_string = original_string[:search_string_start] + "user_name"
+
+print(new_string)
 
 # You've just completed a relatively tricky bit of footwork. Thankfully, there are easier 
 # means of replacing a substring within a larger string. Python offers strings a simple,
@@ -86,6 +91,10 @@ substring = "Too"
 count_string = "One Two Too"
 
 ### CODE HERE: ###
+
+count_string = count_string.replace(substring, "Three")
+
+print("Fixed string:", count_string)
 
 
 # Let's move on to our second method:
@@ -130,6 +139,9 @@ query_string = "string"
 
 ### CODE HERE: ###
 
+starting_index = original_string.find(query_string)
+
+print("Found query string at index:", starting_index)
 
 # Finally, let's cover three methods that allow you to manipulate the
 # capitalization of a string, beginning with:
@@ -169,6 +181,10 @@ store_status = "open"
 
 ### CODE HERE: ###
 
+store_status = store_status.upper()
+
+print("Uppercased output:", store_status)
+
 
 # Of course, if:
 #
@@ -200,6 +216,9 @@ store_status = "open"
 
 ### CODE HERE: ###
 
+store_status = store_status.lower()
+
+print("Back to normal casing:",store_status)
 
 # Finally, let's take a look at the:
 #
@@ -267,10 +286,16 @@ store_status = "open"
 # to console.
 #
 
-first_name = "Betty"
+first_name = "betty"
 
-last_name = "White"
+last_name = "white"
 
 ### CODE HERE: ###
 
+first_name = first_name.capitalize()
 
+last_name = last_name.capitalize()
+
+full_name = first_name + ' ' + last_name
+
+print("Full name is:", full_name)
